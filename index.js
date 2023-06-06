@@ -10,7 +10,7 @@ bot.command('start', (ctx) => {
 bot.on('message', async (ctx) => {
   try {
     const inputText = ctx.message.text;
-    const encodedText = encodeURIComponent(inputText + " Remember that the maximum length of your response is 3000 chars.");
+    const encodedText = encodeURIComponent(inputText);
     const url = 'http://162.243.187.205:3000/ask';
 
     // const response = await axios.get(url, `prompt=${encodedText}`, {
